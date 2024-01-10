@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"mototestpro\startup_stm32f103xb.o"
+"mototestpro\main.o"
+"mototestpro\gpio.o"
+"mototestpro\tim.o"
+"mototestpro\stm32f1xx_it.o"
+"mototestpro\stm32f1xx_hal_msp.o"
+"mototestpro\encoder.o"
+"mototestpro\light.o"
+"mototestpro\motor.o"
+"mototestpro\stm32f1xx_hal_gpio_ex.o"
+"mototestpro\stm32f1xx_hal_tim.o"
+"mototestpro\stm32f1xx_hal_tim_ex.o"
+"mototestpro\stm32f1xx_hal.o"
+"mototestpro\stm32f1xx_hal_rcc.o"
+"mototestpro\stm32f1xx_hal_rcc_ex.o"
+"mototestpro\stm32f1xx_hal_gpio.o"
+"mototestpro\stm32f1xx_hal_dma.o"
+"mototestpro\stm32f1xx_hal_cortex.o"
+"mototestpro\stm32f1xx_hal_pwr.o"
+"mototestpro\stm32f1xx_hal_flash.o"
+"mototestpro\stm32f1xx_hal_flash_ex.o"
+"mototestpro\stm32f1xx_hal_exti.o"
+"mototestpro\system_stm32f1xx.o"
+--strict --scatter "MotoTestPro\MotoTestPro.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MotoTestPro.map" -o MotoTestPro\MotoTestPro.axf
